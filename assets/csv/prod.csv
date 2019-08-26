@@ -36,8 +36,8 @@ BWL,Master,Personalmanagement,Yes,No,Fair,Bad,Fair,Neutral,Disagree,hard,written
 Angewandte Kognitions- und Medienwissenschaften,Master,Softwaretechnik,Yes,Yes,Fair,Good,Good,Neutral,Neutral,just right,written,presentation sheets,2.7,Yes
 Angewandte Kognitions- und Medienwissenschaften,Master,Fortgeschrittene Programmiertechniken,Yes,Yes,Good,Fair,Fair,Neutral,Disagree,just right,written,presentation sheets,3,No
 Angewandte Kognitions- und Medienwissenschaften,Master,Electronic communities and social networks,Yes,No,Good,Good,Good,Agree,Neutral,just right,written,"presentation sheets,video",2.7,Yes
-Angewandte Kognitions- und Medienwissenschaften,Master,"Cloud, Web & Mobile",Yes,Yes,Good,Fair,Fair,Disagree,Neutral,hard,written,presentation sheets,4,No
-Informatik und Angewandte Kognitionswissenschaft,Master,"Cloud, Web & Mobile",Yes,Yes,Fair,Bad,Fair,Agree,Neutral,just right,written,presentation sheets,3.3,No
+Angewandte Kognitions- und Medienwissenschaften,Master,"Cloud, Web, Mobile",Yes,Yes,Good,Fair,Fair,Disagree,Neutral,hard,written,presentation sheets,4,No
+Informatik und Angewandte Kognitionswissenschaft,Master,"Cloud, Web, Mobile",Yes,Yes,Fair,Bad,Fair,Agree,Neutral,just right,written,presentation sheets,3.3,No
 Informatik und Angewandte Kognitionswissenschaft,Master,Game Architecture and Design,Yes,Yes,Good,Good,Good,Agree,Agree,just right,written,presentation sheets,1.7,Yes
 Informatik und Angewandte Kognitionswissenschaft,Master,Computer Graphics,Yes,No,Fair,Fair,Bad,Neutral,Neutral,hard,oral,presentation sheets,4,No
 Informatik und Angewandte Kognitionswissenschaft,Master,Cognitive Robot Systems,Yes,Yes,Good,Fair,Fair,Agree,Neutral,hard,written,presentation sheets,3.3,Yes
@@ -69,15 +69,15 @@ Angewandte Kognitions- und Medienwissenschaften,Master,Business Communications,N
 Angewandte Kognitions- und Medienwissenschaften,Master,Digital Enterprise,No,No,Good,Good,Good,Agree,Disagree,just right,presentation,presentation sheets,1.7,Yes
 Angewandte Kognitions- und Medienwissenschaften,Master,Digital Society,No,No,Good,Good,Good,Agree,Disagree,just right,presentation,presentation sheets,1.7,Yes
 Angewandte Kognitions- und Medienwissenschaften,Master,Internet Research,No,No,Good,Good,Good,Agree,Disagree,just right,presentation,presentation sheets,1.7,Yes
-Angewandte Kognitions- und Medienwissenschaften,Master,"Cloud Web Mobile",Yes,No,Fair,Fair,Fair,Neutral,Disagree,just right,written,"presentation sheets,video",1.7,Yes
+Angewandte Kognitions- und Medienwissenschaften,Master,"Cloud, Web, Mobile",Yes,No,Fair,Fair,Fair,Neutral,Disagree,just right,written,"presentation sheets,video",1.7,Yes
 Angewandte Kognitions- und Medienwissenschaften,Master,Business Communications,No,No,Good,Good,Good,Agree,Agree,just right,oral,presentation sheets,1.3,Yes
 Angewandte Kognitions- und Medienwissenschaften,Master,Internet Technologie,No,No,Good,Good,Good,Agree,Agree,just right,report/scientific paper,presentation sheets,1.3,Yes
 Angewandte Kognitions- und Medienwissenschaften,Master,Mikroökonomie,Yes,No,Good,Good,Fair,Neutral,Disagree,just right,written,"presentation sheets,books",1,Yes
-Angewandte Kognitions- und Medienwissenschaften,Master,"Cloud Web Mobile",Yes,No,Fair,Good,Fair,Neutral,Agree,just right,written,"presentation sheets,books,video",1.7,Yes
+Angewandte Kognitions- und Medienwissenschaften,Master,"Cloud, Web, Mobile",Yes,No,Fair,Good,Fair,Neutral,Agree,just right,written,"presentation sheets,books,video",1.7,Yes
 Angewandte Kognitions- und Medienwissenschaften,Master,Kognitionspsychologie,No,No,Fair,Fair,Fair,Neutral,Disagree,just right,presentation,presentation sheets,1,Yes
 Angewandte Kognitions- und Medienwissenschaften,Master,Konsumentenpsychologie,No,Yes,Good,Good,Good,Agree,Agree,just right,presentation,presentation sheets,1.3,Yes
 Angewandte Kognitions- und Medienwissenschaften,Master,Mikroökonomie,No,Yes,Good,Fair,Fair,Neutral,Neutral,just right,written,presentation sheets,1.3,Yes
-Angewandte Kognitions- und Medienwissenschaften,Master,"Cloud Web Mobile",Yes,No,Fair,Fair,Fair,Agree,Agree,low,written,"presentation sheets,video",1.7,Yes
+Angewandte Kognitions- und Medienwissenschaften,Master,"Cloud, Web, Mobile",Yes,No,Fair,Fair,Fair,Agree,Agree,low,written,"presentation sheets,video",1.7,Yes
 Angewandte Kognitions- und Medienwissenschaften,Master,Business Communications,No,No,Good,Good,Fair,Agree,Agree,just right,presentation,presentation sheets,1.3,Yes
 Angewandte Kognitions- und Medienwissenschaften,Master,Internet Technologie,No,No,Fair,Fair,Fair,Neutral,Neutral,just right,presentation,presentation sheets,1.3,Yes
 Angewandte Kognitions- und Medienwissenschaften,Master,Mikroökonomie,No,No,Fair,Fair,Fair,Neutral,Disagree,just right,written,presentation sheets,1.3,No

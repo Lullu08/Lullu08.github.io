@@ -118,7 +118,7 @@ class PieChartService {
             var selector = this.buildSelectorForDetailPage(chart)
         } else {
             var attribut = Helper.capitalizeFirstLetter(chart.attribut)
-            var selector = ('#chart-' + tooltipId + attribut).replace(/ /g,'')
+            var selector = ('#chart-' + tooltipId + attribut).replace(/ /g,'').replace(/,/g,'')
         }
         var chart = c3.generate({
             bindto: selector,

@@ -207,7 +207,7 @@
                     for (var chart of chartServices) {
                         var rateCell = row.insertCell();
                         var course = chart.data[0].coursename
-                        tooltipId = ('chart-' + course + att).replace(/ /g,'')
+                        tooltipId = ('chart-' + course + att).replace(/ /g,'').replace(/,/g,'')
                         if (att == 'Recommendation') {
                             rate = chart.getRecommendation();
                             rateCell.innerHTML = '<div>' + rate + '%</div>';

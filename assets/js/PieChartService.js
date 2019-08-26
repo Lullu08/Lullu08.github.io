@@ -11,7 +11,6 @@ class PieChart {
 
 class PieChartService {
     data;
-    chart;
     charts;
 
     constructor(data){
@@ -153,7 +152,7 @@ class PieChartService {
                 return this.goodFairBadRate('organization')
             case "Previous Knowledge":
                 return this.agreeNeutralDisagreeRate('previousKnowledge');
-            case "Satisfaction with the learned":
+            case "Satisfaction":
                 return this.agreeNeutralDisagreeRate('satisfaction');
             case "Difficulty":
                 return this.justRightLowHardRate('difficulty');

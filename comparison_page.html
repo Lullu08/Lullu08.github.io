@@ -198,6 +198,9 @@
                 var rate = 0;
 
                 for (var att of attributs) {
+                    if (att == "Satisfaction with the learned") {
+                            att = "Satisfaction"
+                        }
                     var row = table.insertRow();
                     var attCell = row.insertCell(0);
                     attCell.innerHTML = '<div>' + att + '</div>'

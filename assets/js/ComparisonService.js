@@ -35,7 +35,7 @@ class ComparisonService {
             case "Previous Knowledge":
                 this.previousKnowledgeRates.push({Course: course, Value: rate})
                 break;
-            case "Satisfaction with the learned":
+            case "Satisfaction":
                 this.satisfactionRates.push({Course: course, Value: rate})     
                 break;     
             case "Difficulty":
@@ -94,7 +94,7 @@ class ComparisonService {
                 winners = this.findAllWinners(this.previousKnowledgeRates.sort(Helper.sortForChart('Value')))
                 this.paintCellGreen(winners[0])
                 break;
-            case "Satisfaction with the learned":
+            case "Satisfaction":
                 winners = this.findAllWinners(this.satisfactionRates.sort(Helper.sortForChart('Value')))
                 this.paintCellGreen(winners[0])
                 break;           

@@ -120,11 +120,9 @@
                 //initialize dropdown
                 new DropdownService(Array.from(courses), 'select-course-details');
                 new DropdownService(Array.from(courses), 'select-course-to-compare').dependendChange();
-                console.log(filteredData)
                 chartService = new PieChartService(filteredData);
                 buildAccordion(attributs);
                 for (var chart of chartService.charts) {
-                    console.log(chart)
                     chartService.generatePieChart(chart)
                 }
                 unexpandAccordions();

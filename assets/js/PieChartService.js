@@ -154,6 +154,8 @@ class PieChartService {
                 return this.agreeNeutralDisagreeRate('previousKnowledge');
             case "Satisfaction":
                 return this.agreeNeutralDisagreeRate('satisfaction');
+            case "Satisfaction with the learned":
+                return this.agreeNeutralDisagreeRate('satisfaction');
             case "Difficulty":
                 return this.justRightLowHardRate('difficulty');
             case "Overall Quality":

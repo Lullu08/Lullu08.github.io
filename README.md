@@ -98,6 +98,6 @@ The most easiest way to run this project locally you only need to clone this rep
 With every change the master branch of this repository is deployed to [https://lullu08.github.io/](https://lullu08.github.io/). There are no special requirements for the deployment of this project to any other destination hosted somewhere else. 
 
 ### Contributors
-* Luisa Bräuer 
-* Moloud
-* ABM Rocknuzzaman
+* Luisa Bräuer (head student-side)
+* Moloud Kordestani
+* ABM Rocknuzzaman (head teacher-side)

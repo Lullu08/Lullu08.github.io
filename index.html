@@ -1,80 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-		<!-- Required meta tags -->
-        <meta charset="utf-8">
-		
-		<!-- CSS Files -->
-        <link rel="stylesheet" href="assets/js/libraries/c3-0.7.1/c3.min.css">
-        <link rel="stylesheet" href="assets/css/libraries/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/welcome_page.css">
-        <link rel="stylesheet" href="assets/css/top_bar.css">
-        
-		<!-- JS Files -->
-        <script type="text/javascript" src="assets/js/libraries/d3.v5.min.js"></script>
-        <script type="text/javascript" src="assets/js/libraries/c3-0.7.1/c3.min.js"></script>
-        <script type="text/javascript" src="assets/js/libraries/jquery-3.3.1.slim.min.js"></script>
-        <script type="text/javascript" src="assets/js/libraries/popper.min.js"></script>
-        <script type="text/javascript" src="assets/js/libraries/bootstrap.min.js"></script>
-        <script type="text/javascript" src="assets/js/DropdownService.js"></script>
-        <script type="text/javascript" src="assets/js/BuildHrefService.js"></script>
-        
-		
-		<title>G3D3</title>
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-lg static-top row">
-                <div class="navbar-brand">
-                    <a href="/"><img alt="Logo" src="assets/images/logo_v1.png"></a>
-                    <span>Course Selection Support</span>
-                </div>
-            </nav>
-        <div class="container">
-            <div class="jumbotron">
-                <h1>Welcome!</h1>
-                <p>This is the <b>Course Selection Service</b> of the University of Duisburg-Essen!
-                <br/>
-                Enter your study program and target degree and get started!</p>
-            </div>
-            <div class="selection">
-                <div class="selection__part">
-                    <p>Select your study program:</p>
-                    <select class="dropdown--study-program">
-                        <!--study programs from csv here-->
-                    </select>
-                </div>
-                <div class="selection__part">
-                    <p>Select your target degree:</p>
-                    <select class="dropdown--target-degree">
-                        <!--target degrees here-->
-                    </select>
-                </div>
-            </div>
-            <button type="button" class="btn selection__submit" onclick="location.href=BuildHrefService.buildHrefFromSelectionIndex()">Find Courses!</button>
-        </div>              
-		
-        <script>
-            //setup
-            var studyprograms = new Set();
-            var degrees = new Set();
 
-            //retrieve data
-            $(document).ready(
-                d3.csv("assets/csv/prod.csv", function(row) {
-                    return {
-                        studyprogram : row.studyProgram,
-                        targetdegree : row.targetDegree
-                    };
-                }).then(function(data) {
-                    data.filter(function(row) {
-                        studyprograms.add(row['studyprogram']);
-                        degrees.add(row['targetdegree']);
-                    })
-                    //initialize the dropdowns
-                    new DropdownService(Array.from(studyprograms), 'study-program');
-                    new DropdownService(Array.from(degrees), 'target-degree');
-                })
-            );
-        </script>
-    </body>
-</html>  
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>G3D3</title>
+  <link rel="stylesheet" href="assets/css/libraries/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/libraries/font-awesome.min.css">
+  <script type="text/javascript" src="assets/js/libraries/jquery-3.3.1.slim.min.js"></script>
+  <script type="text/javascript" src="assets/js/libraries/bootstrap.min.js"></script>
+ 
+
+
+<style>
+@import url(http://fonts.googleapis.com/css?family=Bitter:700);
+
+svg {
+  width: 850px;
+  height: 360px;
+  margin-top: 100px;
+}
+
+
+.red { fill: #e54e26; }
+.red-purple { fill: #7f1333; }
+.purple { fill: #694d9f; }
+.gray { fill: #474747; }
+.lightgray { fill: #a3a3a3; }
+
+.button{
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 400px 29px;
+      cursor: pointer;
+      margin: 400px 29px; 
+      position: absolute;
+      top: 50%;       
+    }
+
+
+</style>
+<!--Button-->
+<div button>
+
+<input type="button" class="btn btn-outline-primary btn-lg" value="Student" onclick="window.location.href='welcome_page.html'" /> 
+
+<input type="button" class="btn btn-outline-primary btn-lg" value="Teacher" onclick="window.location.href='teacher-side/teacher.html'" /> 
+<input type="button" class="btn btn-outline-primary btn-lg" value="About" onclick="window.location.href='about.html'" />
+</div>
+
+<svg viewBox="0 00 100 172" width="190" height="172">
+  <defs>
+    <path id="line-long" d="m-15.5,0v85a15.5,15.5 0 0 0 31,0v-85a15.5,15.5 0 0 0 -31,0zm9,0a6.5,6.5 0 0,0 13,0a6.5,6.5 0 0,0 -13,0zm0,85a6.5,6.5 0 0,0 13,0a6.5,6.5 0 0,0 -13,0z" fill-rule="evenodd"></path>
+    <path id="line-short1" d="m-15.5,0v60.81118318204309a15.5,15.5 0 0 0 31,0v-60.81118318204309a15.5,15.5 0 0 0 -31,0zm9,0a6.5,6.5 0 0,0 13,0a6.5,6.5 0 0,0 -13,0zm0,60.81118318204309a6.5,6.5 0 0,0 13,0a6.5,6.5 0 0,0 -13,0z" fill-rule="evenodd"></path>
+    <path id="line-short2" d="m-15.5,0v60.81118318204309a10.5,15.5 0 0 0 31,0v-60.81118318204309a10.5,15.5 0 0 0 -31,0zm9,0a6.5,6.5 0 0,0 13,0a6.5,6.5 0 0,0 -13,0zm0,60.81118318204309a6.5,6.5 0 0,0 13,0a6.5,6.5 0 0,0 -13,0z" fill-rule="evenodd"></path>
+    <path id="line-short3" d="m-15.5,0v60.81118318204309a15.5,15.5 0 0 0 31,0v-60.81118318204309a15.5,15.5 0 0 0 -31,0zm9,0a6.5,6.5 0 0,0 13,0a6.5,6.5 0 0,0 -13,0zm0,60.81118318204309a6.5,6.5 0 0,0 13,0a6.5,6.5 0 0,0 -13,0z" fill-rule="evenodd"></path>
+    <path id="line-short4" d="m-15.5,0v60.81118318204309a15.1,15.5 0 0 0 31,0v-40.81118318204309a15.5,10.5 0 0 0 -31,0zm9,0a6.5,6.5 0 0,0 0,0a6.5,6.5 00 0,0 0,0zm0,60.81118318204309a6.5,6.5 0 0,0 13,0a6.5,6.5 0 0,0 -13,0z" fill-rule="evenodd"></path>
+    <clipPath id="clip-orange-red"><use transform="translate(52,19)" xlink:href="#line-long"></use></clipPath>
+    <clipPath id="clip-red-purple"><use transform="translate(52,104)rotate(-135)" xlink:href="#line-short"></use></clipPath>
+    <clipPath id="clip-purple-cyan"><use transform="translate(138,19)" xlink:href="#line-long"></use></clipPath>
+  </defs>
+  
+  <g transform="translate(-.5,-.5)">
+    <use transform="translate(52,19)" xlink:href="#line-long" class="red"></use>
+    <use transform="translate(52,104)rotate(-90)" xlink:href="#line-short1" class="red"></use>
+    <use transform="translate(113,43)" xlink:href="#line-short4" class="red"></use>
+    <use transform="translate(113,19)rotate(90)" xlink:href="#line-short2" class="red"></use>
+    
+    <use transform="translate(230,19)" xlink:href="#line-long" class="purple"></use>
+    <use transform="translate(170,104)rotate(-90)" xlink:href="#line-short2" class="purple"></use>
+    <use transform="translate(230,19)rotate(90)" xlink:href="#line-short2" class="purple"></use>
+    <use transform="translate(230,60)rotate(90)" xlink:href="#line-short3" class="purple"></use>
+
+    
+    <text x="115" y="150" text-anchor="middle" font-family="Bitter" font-size="20" font-weight="bold" class="gray">Course<tspan class="lightgray">Selection</tspan></text>
+    <text x="145" y="170" text-anchor="middle" font-family="Bitter" font-size="15" font-weight="bold" class="gray">Teaching<tspan class="lightgray">Strategy</tspan></text>
+
+
+  </g>
+</svg>
+
+</head>

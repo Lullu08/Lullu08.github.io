@@ -1,6 +1,6 @@
 # Course Selection Support & Teaching Strategy [CSTS] by G3D3
 This simple system was created to help students of the University of Duisburg-Essen find and compare courses of their study program. Students are able to view other students reviews of courses retrieved from a survey that was carried out through May and June of 2019. Therefore the data basis is not exhaustive let alone very huge, but shows the systems potential and is easily expandable.
-Based on the assessed data users are able to pick their specific study program and view ratings of corresponding courses on specfic attributs like diffculty, pacing, etc. as well as the average grade or general recommendation. Users are also able to filter for courses based on their exam style, availablity of excercises or bonus points. Users are provided a Top 3 as well as a "show all" ranking of the reviewd courses in their program. Users are also able to inspect courses in detail or compare 2-3 courses of interest directly to each other. Additionally teachers are also able to .....
+Based on the assessed data users are able to navigate to the student-side of the application and pick their specific study program and view ratings of corresponding courses on specfic attributs like diffculty, pacing, etc. as well as the average grade or general recommendation. Users are also able to filter for courses based on their exam style, availablity of excercises or bonus points. Users are provided a Top 3 as well as a "show all" ranking of the reviewd courses in their program. Users are also able to inspect courses in detail or compare 2-3 courses of interest directly to each other. Additionally teachers are also able to navigate to the teacher-side of the application and evaluate exams and enrollment patterns. Data for this side of the application was also gathered by a small survey but is not at all reliable.
 
 ## Project Architecture
     .
@@ -13,12 +13,14 @@ Based on the assessed data users are able to pick their specific study program a
         └── js                  # js files
            ├── libraries        # js files from outside sources
            └── ...              # js files
+    ├── teacher-side            # everything only concerning the teacher-side of the application
     ├── comparison_page.html                    
     ├── detail_page.html          
     ├── overview_page.html
     ├── index.html
     ├── show_more_page.html
     └── README.md
+    
 
 Generally this project is a very simple application based only on html, css, js/jquery. 
 Specific libraries that were used are:
@@ -27,7 +29,6 @@ Specific libraries that were used are:
 * c3
 * d3
 * jquery
-* popper
 
 All libraries were downloaded and are hosted by ourselves. 
 
@@ -71,6 +72,24 @@ The projects main purpose was the visualization of data. In accord with the What
 **5) Comparsion Table**
 
 ![Comparison table screenshot](https://github.com/Lullu08/Lullu08.github.io/blob/master/assets/images/comparison_table.png)
+
+For the Teachers-side:
+
+**6) Bar and Pie Chart: Exam Evaluation**
+
+![Bar chart and Pie chart screenshot](https://github.com/sadin69/CSTS/blob/master/assets/images/Exam_evu.png)
+
+
+
+**7) Pie Chart: Yearly Subject enrolled**
+
+![Pie chart screenshot](https://github.com/sadin69/CSTS/blob/master/assets/images/Sub_enr.png)
+
+
+
+**8) Bar Chart: Course enrollment**
+
+![Bar chart ](https://github.com/sadin69/CSTS/blob/master/assets/images/Course_inf.png)
 
 ## Run the project
 The most easiest way to run this project locally you only need to clone this repository and run *http-server* the corresponding folder on your command line. For this to work you have to have [npm/Node.js](https://www.npmjs.com/get-npm) and the [http-server package](https://www.npmjs.com/package/http-server) installed. The project should then be running on [http://localhost:8080](http://localhost:8080).
